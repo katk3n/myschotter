@@ -29,8 +29,8 @@ jobs:
           args: --release --target=x86_64-apple-darwin
       - name: Package for macOS
         run: |
-          zip --junk-paths rc-x86_64-apple-darwin target/x86_64-apple-darwin/release/rc
+          zip --junk-paths rc-x86_64-apple-darwin target/x86_64-apple-darwin/release/myschotter
       - uses: actions/upload-artifact@v2
         with:
           name: build-x86_64-apple-darwin
-          path: rc-build-x86_64-apple-darwin.zip
+          path: myschotter-build-x86_64-apple-darwin.zip
